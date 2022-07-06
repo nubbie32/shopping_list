@@ -62,3 +62,12 @@ header {
         flex-wrap: wrap;
         justify-content: space-around;
 }
+
+.totals {
+    background-color: magenta;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
