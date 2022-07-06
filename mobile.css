@@ -1,0 +1,64 @@
+header {
+    background-color: blue;
+    text-align: center;
+}
+
+.begin {
+    background-color: green;
+}
+
+.attempt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.fname {
+    margin-right: 2%;
+}
+
+.lname {
+    margin-right: 2%;
+}
+
+.date {
+    margin-right: 2.5%;
+}
+
+.time {
+    margin-right: 2.5%;
+}
+
+.totalAmount {
+    margin-right: 5%;
+}
+
+.stores {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.farmList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: red;
+}
+
+.farmList1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
