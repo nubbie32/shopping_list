@@ -45,27 +45,36 @@ header {
 
 .list {
     display: grid;
-    grid-template-columns: 200px, 200px, 200px, 200px;
+    grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(9, 200px);
-    gap: 1rem;
+    border: solid;
+    border-color: black;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
 .box1 {
     background-color:blue;
-    padding-top: 25px;
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
+   /* padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 25px;
-    padding-left: 25px;
+    padding-left: 25px;*/
 
 }
 .box2 {
     background-color: blueviolet;
-    padding-top: 25px;
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    
+    /*padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 25px;
-    padding-left: 25px;
+    padding-left: 25px;*/
     
 }
+/*
 .box3 {
     background-color: brown;
     padding-top: 25px;
