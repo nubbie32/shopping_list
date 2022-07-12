@@ -1,4 +1,4 @@
-header {
+/*header {
     background-color: blue;
     text-align: center;
 }
@@ -43,7 +43,7 @@ header {
     justify-content: space-evenly;
 }
 
-.list {
+/*.list {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(9, 200px);
@@ -62,7 +62,7 @@ header {
     padding-right: 25px;
     padding-left: 25px;*/
 
-}
+/*}
 .box2 {
     background-color: blueviolet;
     grid-column: 3 / 4;
@@ -73,7 +73,7 @@ header {
     padding-right: 25px;
     padding-left: 25px;*/
     
-}
+
 /*
 .box3 {
     background-color: brown;
