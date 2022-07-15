@@ -1,67 +1,107 @@
-const products = [
-{
-    id: pineapple,
-    name: "Pineapple",
-    price: 2.99,
-    priceRepeat: 0.99, 
-    imgSrc: "./images/183-1834666_pineapple-png-file-pineapple-transparent-png-download.png",
-},
-{
-    id: toiletpaper,
-    name: "toiletpaper",
-    price: 10.99,
-    priceRepeat: 2.00,
-    imgSrc:"./images/Toilet-Paper-PNG-File-Download-Free.png",
-},
-{
-    id: lysol,
-    name: "lysol",
-    price: 7.00,
-    priceRepeat: 3.99,
-    imgSrc: "./images/Lysol-Cleaner-Transparent-Background.png",
-},
-{
-    id: facemasks,
-    name: "facemasks",
-    price: 2.99,
-    priceRepeat: 5.99,
-    imgSrc: "./images/face-mask-black-png-11589318594cjwytppdco.png",
-},
-{
-    id: steak,
-    name: "steak",
-    price: 8.99,
-    priceRepeat: 12.99,
-    imgSrc: "./images/Raw-meat-on-transparent-PNG.png",
-    
-},
-{
-    id: apples,
-    name: "apples",
-    price: 3.00,
-    priceRepeat: 4.99,
-    imgSrc: "./images/mesh-bag-bulk-apples1.png",
-},
-{
-    id: whitebread,
-    name: "whitebread",
-    price: 0.99,
-    priceRepeat: 1.00,
-    imgSrc: "./images/CBH-Country-White-FOP-2021_0923a-300x538.png",
-},
-{
-    id: milk,
-    name: "milk",
-    price: 5.00,
-    priceRepeat: 2.50,
-    imgSrc: "./images/3406302-middle.png",
-},
-{
-    id: icecream,
-    name: "ice cream",
-    price: 1.50,
-    priceRepeat: 1.25,
-    imgSrc: "./images/Dutch-chocolate-HG-WEB.png",
-}
+//making my shoping items with the parent id  
 
-];
+let shop = document.getElementById('shop');
+
+
+//my items array
+
+let shopItemsData = [{
+    id:"hi",
+    name: "Casual Shirt",
+    price: 45,
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+    img: "images/img-1.jpg"
+},
+{   
+    id:"bye",
+    name: "Office Shirt",
+    price: 100,
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+    img: "images/img-2.jpg"},
+
+{   
+    id:"hola",
+    name: "T Shirt",
+    price: 25,
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+    img: "images/img-3.jpg"},
+
+{
+    id:"adios",
+    name: "Mens Suit",
+    price: 100,
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+    img: "images/img-4.jpg"
+}];
+
+let basket = [];
+
+//accessing my items function
+
+let generateShop =()=>{
+    return (shop.innerHTML = shopItemsData.map((x)=>{
+        let { id, name, price, desc, img } =x;
+        return `
+        <div id=product-id-${id} class="item">
+        <img width="220" src=${img} alt="">
+        <div class="details">
+            <h3>${name}</h3>
+            <p>${desc}</p>
+            <div class="price-quantity">
+                <h2>$ ${price}</h2>
+                <div class="buttons">
+                    <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
+                    <div id=${id} class="quantity">0</div>
+                    <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
+                </div>
+            </div>
+        </div>
+    
+    
+    </div>
+        `
+    }).join(""));
+};
+
+//calling my items end of function
+
+generateShop()
+
+
+//counting my items functions
+
+let increment = (id)=>{
+    let selectedItem = id;
+    console.log(selectedItem.id)
+};
+
+
+let decrement = (id)=>{
+   let selectedItem =id;
+   console.log(selectedItem.id)
+};
+
+let update = ()=>{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

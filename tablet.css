@@ -1,408 +1,104 @@
-/*header {
-    background-color: blue;
-    text-align: center;
+/*changing default setting of browser*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.begin {
-    background-color: green;
+body{
+    font-family: sans-serif;
 }
 
-.attempt {
-    display: flex;
+/*Navbar styles are here*/
+
+.navbar {
+    display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.fname {
-    margin-right: 2%;
-}
-
-.lname {
-    margin-right: 2%;
-}
-
-.date {
-    margin-right: 2.5%;
-}
-
-.time {
-    margin-right: 2.5%;
-}
-
-.totalAmount {
-    margin-right: 5%;
-}
-
-.stores {
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-/*.list {
-    display: grid;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(9, 200px);
-    border: solid;
-    border-color: black;
-    column-gap: 2rem;
-    row-gap: 2rem;
-}
-
-.box1 {
-    background-color:blue;
-    grid-column: 2 / 4;
-    grid-row: 6 / 7;
-   /* padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;*/
-
-/*}
-.box2 {
-    background-color: blueviolet;
-    grid-column: 3 / 4;
-    grid-row: 5 / 6;
-    
-    /*padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;*/
-    
-
-/*
-.box3 {
-    background-color: brown;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box4 {
-    background-color: seagreen;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box5 {
-    background-color: slategrey;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box6 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 30px;
 }
 
-.box7 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
+/*the cart in right corner*/
+
+.cart{
+    position: relative;
+    background-color: white;
+    color:black;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 4px;
 }
 
-.box8 {
-    background-color: brown;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box9 {
-    background-color: seagreen;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box10 {
-    background-color: slategrey;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box11 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
+/*The counter on the cart*/
 
-.box12 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box13 {
-    background-color:blue;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-
-}
-.box14 {
-    background-color: blueviolet;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-    
-}
-.box15 {
-    background-color: brown;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box16 {
-    background-color: seagreen;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box17 {
-    background-color: slategrey;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box18 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box19 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box20 {
-    background-color: brown;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box21 {
-    background-color: seagreen;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box22 {
-    background-color: slategrey;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box23 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box24 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box25 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box26 {
-    background-color: brown;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box27 {
-    background-color: seagreen;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box28 {
-    background-color: slategrey;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box29 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box30 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box31 {
-    background-color:blue;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-
-}
-.box32 {
-    background-color: blueviolet;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-    
-}
-.box33 {
-    background-color: brown;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box34 {
-    background-color: seagreen;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box35 {
-    background-color: slategrey;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box36 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box37 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box38 {
-    background-color: brown;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box39 {
-    background-color: seagreen;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box40 {
-    background-color: slategrey;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-.box41 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.box42 {
-    background-color: tomato;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.farmlist {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.cartAmount{
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
     background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+
 }
-*/
 
+/*Shop items styles*/
 
-.totals {
-    background-color: magenta;
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+
+}
+
+@media (max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+@media (max-width: 500px){
+        .shop{
+            grid-template-columns: repeat(1, 223px);
+        }
+}
+.item{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.bi-dash-lg{
+    color: red;
+}
+
+.bi-plus-lg{
+    color: green;
 }
