@@ -9,12 +9,22 @@ body{
     font-family: sans-serif;
 }
 
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 /*Navbar styles are here*/
 
 .navbar {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: black;
     color: white;
     padding-top: 25px;
@@ -101,4 +111,74 @@ body{
 
 .bi-plus-lg{
     color: green;
+}
+
+
+
+/*Styles for the buttons and labels on cart.html page */
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.HomeBtn, .checkout, .removeAll{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout{
+    background-color: green;
+}
+
+.removeAll{
+    background-color: red;
+}
+
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+/*styles for shopping cart items */
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.cart-item {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+
+.title-price-x{
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
