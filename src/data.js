@@ -3,32 +3,107 @@
 
 let shopItemsData = [{
     id:"hi",
-    name: "Casual Shirt",
-    price: 45,
+    name: "Pineapple",
+    price: 1,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    img: "images/img-1.jpg"
+    img: "images/183-1834666_pineapple-png-file-pineapple-transparent-png-download.png"
 },
 {   
     id:"bye",
-    name: "Office Shirt",
-    price: 100,
+    name: "Milk",
+    price: 5,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    img: "images/img-2.jpg"},
+    img: "images/3406302-middle.png",
+},
 
 {   
     id:"hola",
-    name: "T Shirt",
-    price: 25,
+    name: "White-Bread",
+    price: 2,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    img: "images/img-3.jpg"},
+    img: "images/CBH-Country-White-FOP-2021_0923a-300x538.png",
+},
 
 {
     id:"adios",
-    name: "Mens Suit",
-    price: 100,
+    name: "Ice Cream",
+    price: 10,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    img: "images/img-4.jpg"
-}];
+    img: "images/Dutch-chocolate-HG-Web.png"
+},
+
+{
+    id:"bonjour",
+    name: "Face-Masks",
+    price: 10,
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+    img: "images/face-mask-black-png-11589318594cjwytppdco.png"
+},
+{   
+    id:"tcho",
+    name: "Lysol",
+    price: 2.50,
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+    img: "images/Lysol-Cleaner-Transparent-Background.png",
+},
+
+{   
+    id:"see ya",
+    name: "Apples",
+    price: 7,
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+    img: "images/mesh-bag-bulk-apples1.png",
+},
+
+{
+    id:"now",
+    name: "Steak",
+    price: 20,
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+    img: "images/Raw-meat-on-transparent-PNG.png"
+
+},
+{
+    id:"yes",
+    name: "Toiletpaper",
+    price: 50,
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
+    img: "images/Toilet-Paper-PNG-File-Download-Free.png"
+
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+];
 
 
 

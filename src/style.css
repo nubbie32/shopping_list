@@ -25,13 +25,20 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: green;
     color: white;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 60px;
     padding-right: 60px;
     margin-bottom: 30px;
+}
+
+/*Buyers info*/
+.order-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*the cart in right corner*/
