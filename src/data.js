@@ -48,7 +48,7 @@ let shopItemsData = [{
 },
 
 {   
-    id:"see ya",
+    id:"see",
     name: "Apples",
     price: 7,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",

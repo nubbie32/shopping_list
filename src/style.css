@@ -7,6 +7,7 @@
 
 body{
     font-family: sans-serif;
+   
 }
 
 i{
@@ -25,13 +26,13 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
+    background-color: #003049;
     color: white;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 5%;
     padding-left: 60px;
     padding-right: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 0%;
 }
 
 /*Buyers info*/
@@ -89,6 +90,14 @@ a{
 .item{
     border: 2px solid black;
     border-radius: 4px;
+    box-shadow: 5px 15px #F77F00;
+    background-color: bisque;
+}
+
+.modify {
+    background-color: #FCBF49;
+    padding-top: 2.5%;
+    margin-top: 0%;
 }
 
 .details{
@@ -165,6 +174,8 @@ a{
     border: 2px solid black;
     border-radius: 5px;
     display: flex;
+    box-shadow: 5px 15px #9A031E;
+    background-color: #CAF0F8;
 }
 
 .title-price-x{
