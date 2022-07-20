@@ -6,7 +6,7 @@ let shopItemsData = [{
     name: "Pineapple",
     price: 1,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    img: "images/183-1834666_pineapple-png-file-pineapple-transparent-png-download.png"
+    img: "images/3-33807_pineapple-png-transparent-png.png"
 },
 {   
     id:"bye",
@@ -42,7 +42,7 @@ let shopItemsData = [{
 {   
     id:"tcho",
     name: "Lysol",
-    price: 2.50,
+    price: 2,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
     img: "images/Lysol-Cleaner-Transparent-Background.png",
 },
