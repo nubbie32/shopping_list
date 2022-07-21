@@ -6,7 +6,7 @@ let shopItemsData = [{
     name: "Pineapple",
     price: 1,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    img: "images/3-33807_pineapple-png-transparent-png.png"
+    img: "images/3-33807_pineapple-png-transparent-png.png",
 },
 {   
     id:"bye",
