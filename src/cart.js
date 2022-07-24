@@ -143,10 +143,20 @@ let totalAmount = () => {
         }).reduce((x,y) => x + y, 0);
         label.innerHTML = `
         <h2>Total Bill : $ ${amount}</h2>
-        <button class = "checkout">Checkout</button>
+        <button class = "checkout" onclick = "newQuantity">Checkout</button>
         <button onclick = "clearCart()" class = "removeAll">Clear Cart</button>
         `;
     } else return;
 };
 
 totalAmount();
+
+let newQuantity = function totalQuantity() {
+    let itemsBought = localStorage.getItem("data", JSON.stringify(basket));
+    let itWorks = shopItemsData.total;
+    
+    return itemsBought - itWorks
+
+};
+
+console.log(newQuantity);

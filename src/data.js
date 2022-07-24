@@ -7,6 +7,7 @@ let shopItemsData = [{
     price: 1,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
     img: "images/3-33807_pineapple-png-transparent-png.png",
+    total: 20
 },
 {   
     id:"bye",
@@ -14,6 +15,7 @@ let shopItemsData = [{
     price: 5,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
     img: "images/3406302-middle.png",
+    total: 20
 },
 
 {   
@@ -22,6 +24,7 @@ let shopItemsData = [{
     price: 2,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
     img: "images/CBH-Country-White-FOP-2021_0923a-300x538.png",
+    total: 20
 },
 
 {
@@ -29,7 +32,8 @@ let shopItemsData = [{
     name: "Ice Cream",
     price: 10,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    img: "images/Dutch-chocolate-HG-Web.png"
+    img: "images/Dutch-chocolate-HG-Web.png",
+    total: 20
 },
 
 {
@@ -37,7 +41,8 @@ let shopItemsData = [{
     name: "Face-Masks",
     price: 10,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    img: "images/face-mask-black-png-11589318594cjwytppdco.png"
+    img: "images/face-mask-black-png-11589318594cjwytppdco.png",
+    total: 20
 },
 {   
     id:"tcho",
@@ -45,6 +50,7 @@ let shopItemsData = [{
     price: 2,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
     img: "images/Lysol-Cleaner-Transparent-Background.png",
+    total: 20
 },
 
 {   
@@ -53,6 +59,7 @@ let shopItemsData = [{
     price: 7,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
     img: "images/mesh-bag-bulk-apples1.png",
+    total: 20
 },
 
 {
@@ -60,7 +67,8 @@ let shopItemsData = [{
     name: "Steak",
     price: 20,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    img: "images/Raw-meat-on-transparent-PNG.png"
+    img: "images/Raw-meat-on-transparent-PNG.png",
+    total: 20
 
 },
 {
@@ -68,7 +76,8 @@ let shopItemsData = [{
     name: "Toiletpaper",
     price: 50,
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    img: "images/Toilet-Paper-PNG-File-Download-Free.png"
+    img: "images/Toilet-Paper-PNG-File-Download-Free.png",
+    total: 20
 
 },
 
