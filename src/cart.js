@@ -153,10 +153,41 @@ totalAmount();
 
 let newQuantity = function totalQuantity() {
     let itemsBought = localStorage.getItem("data", JSON.stringify(basket));
+    console.log(itemsBought);
     let itWorks = shopItemsData.total;
-    
-    return itemsBought - itWorks
+    console.log(itWorks);
+  return itemsBought - itWorks
 
 };
 
-console.log(newQuantity);
+
+
+
+
+let localStorageItemsInCart = localStorage.getItem("data", JSON.stringify(basket));
+// let shoppingCartCompletedPurchase = [];
+
+let updatedShoppingCartInventory = [];
+
+function testTest(itemsForSale, itemStoredInCart, updatedItemInventory){
+
+    itemsForSale;
+    console.log(itemsForSale);
+
+    // convert to object from string
+    localStorageItemsInCartObj = JSON.parse(itemStoredInCart);
+    console.log(localStorageItemsInCartObj);
+
+    
+
+
+    updatedItemInventory
+    return updatedItemInventory
+};
+
+// name of the array containing all shopItemsData
+
+//JSON.parse(localStorageItemsInCart)
+testTest(shopItemsData, localStorageItemsInCart, updatedShoppingCartInventory);
+//totalQuantity();
+//console.log(newQuantity);

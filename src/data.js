@@ -79,39 +79,7 @@ let shopItemsData = [{
     img: "images/Toilet-Paper-PNG-File-Download-Free.png",
     total: 20
 
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 ];
 
 
