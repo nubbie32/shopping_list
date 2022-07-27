@@ -169,9 +169,13 @@ return false;
 }
 }
 
-let email = document.getElementById("email").value;
- 
-  localStorage.setItem("localemail", email)
+function test() {
+    let email = document.getElementById("email");
+    
+    let email1 = localStorage.setItem("email", email);
+
+    let email2 = localStorage.getItem("email", email);
+};
 
 //localStorage.setItem("email", "ValidateEmail");
 
