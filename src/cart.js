@@ -143,7 +143,7 @@ let totalAmount = () => {
         }).reduce((x,y) => x + y, 0);
         label.innerHTML = `
         <h2>Total Bill : $ ${amount}</h2>
-        <button class = "checkout" onclick = "newQuantity">Checkout</button>
+        <button class = "checkout" onclick = "validateEmail">Checkout</button>
         <button onclick = "clearCart()" class = "removeAll">Clear Cart</button>
         `;
     } else return;
@@ -151,14 +151,18 @@ let totalAmount = () => {
 
 totalAmount();
 
-let newQuantity = function totalQuantity() {
-    let itemsBought = localStorage.getItem("data", JSON.stringify(basket));
-    console.log(itemsBought);
-    let itWorks = shopItemsData.total;
-    console.log(itWorks);
-  return itemsBought - itWorks
 
+function validateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
 };
+
+validateEmail(email);
 
 
 
