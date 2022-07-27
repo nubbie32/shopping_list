@@ -169,14 +169,64 @@ let localStorageItemsInCart = localStorage.getItem("data", JSON.stringify(basket
 
 let updatedShoppingCartInventory = [];
 
+
+
+
 function testTest(itemsForSale, itemStoredInCart, updatedItemInventory){
 
-    itemsForSale;
-    console.log(itemsForSale);
+// convert to object from string
+localStorageItemsInCartObj = JSON.parse(itemStoredInCart);
+console.log(localStorageItemsInCartObj);
 
-    // convert to object from string
-    localStorageItemsInCartObj = JSON.parse(itemStoredInCart);
-    console.log(localStorageItemsInCartObj);
+
+//itemsForSale;
+numItemsForSale = itemsForSale.length;
+//localStorageItemsInCart;
+numLocalStorageItemsInCartObj = localStorageItemsInCartObj.length;
+i = 0;
+
+while(i <= numItemsForSale){
+    setNum = 0;
+    currentId = itemsForSale[i].id;
+    currentTotal = itemsForSale[i].total;
+   // console.log(itemsForSale[i]);
+   console.log(currentId + " " + currentTotal);
+
+ //   while(setNum < numLocalStorageItemsInCartObj){
+        //currentCartId = localStorageItemsInCartObj[setNum].id;
+        //currentCartItem = localStorageItemsInCartObj[setNum].item;
+        //console.log(localStorageItemsInCartObj[setNum]);
+       // console.log( " " + currentCartItem);
+ //      console.log(localStorageItemsInCartObj);
+//        setNum++;
+//    };
+   
+    i++;
+
+};
+
+  //  itemsForSale.forEach(myFunction1);
+
+
+
+
+   // function myFunction1(item){
+
+    //    console.log(item.id + " " + item.total);
+
+
+      //  itemStoredInCart.forEach(myFunction2);
+
+      //  function myFunction2(item){
+       //     console.log(item);
+       // }
+        
+  //  }
+    
+
+
+
+
 
     
 
