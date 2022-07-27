@@ -152,49 +152,59 @@ let totalAmount = () => {
 totalAmount();
 
 
-function validateEmail(mail) 
+function ValidateEmail(inputText)
 {
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
-  {
-    return (true)
-  }
-    alert("You have entered an invalid email address!")
-    return (false)
-};
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+alert("Valid email address!");
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+}
 
-validateEmail(email);
+let email = document.getElementById("email").value;
+ 
+  localStorage.setItem("localemail", email)
+
+//localStorage.setItem("email", "ValidateEmail");
 
 
 
 
-
-let localStorageItemsInCart = localStorage.getItem("data", JSON.stringify(basket));
+//let localStorageItemsInCart = localStorage.getItem("data", JSON.stringify(basket));
 // let shoppingCartCompletedPurchase = [];
 
-let updatedShoppingCartInventory = [];
+//let updatedShoppingCartInventory = [];
 
 
 
 
-function testTest(itemsForSale, itemStoredInCart, updatedItemInventory){
+//function testTest(itemsForSale, itemStoredInCart, updatedItemInventory){
 
 // convert to object from string
-localStorageItemsInCartObj = JSON.parse(itemStoredInCart);
-console.log(localStorageItemsInCartObj);
+//localStorageItemsInCartObj = JSON.parse(itemStoredInCart);
+//console.log(localStorageItemsInCartObj);
 
 
 //itemsForSale;
-numItemsForSale = itemsForSale.length;
+//numItemsForSale = itemsForSale.length;
 //localStorageItemsInCart;
-numLocalStorageItemsInCartObj = localStorageItemsInCartObj.length;
-i = 0;
+//numLocalStorageItemsInCartObj = localStorageItemsInCartObj.length;
+//i = 0;
 
-while(i <= numItemsForSale){
-    setNum = 0;
-    currentId = itemsForSale[i].id;
-    currentTotal = itemsForSale[i].total;
+//while(i <= numItemsForSale){
+  //  setNum = 0;
+    //currentId = itemsForSale[i].id;
+    //currentTotal = itemsForSale[i].total;
    // console.log(itemsForSale[i]);
-   console.log(currentId + " " + currentTotal);
+   //console.log(currentId + " " + currentTotal);
 
  //   while(setNum < numLocalStorageItemsInCartObj){
         //currentCartId = localStorageItemsInCartObj[setNum].id;
@@ -205,9 +215,9 @@ while(i <= numItemsForSale){
 //        setNum++;
 //    };
    
-    i++;
+    //i++;
 
-};
+//};
 
   //  itemsForSale.forEach(myFunction1);
 
@@ -235,13 +245,13 @@ while(i <= numItemsForSale){
     
 
 
-    updatedItemInventory
-    return updatedItemInventory
-};
+  //  updatedItemInventory
+    //return updatedItemInventory
+//};
 
 // name of the array containing all shopItemsData
 
 //JSON.parse(localStorageItemsInCart)
-testTest(shopItemsData, localStorageItemsInCart, updatedShoppingCartInventory);
+//testTest(shopItemsData, localStorageItemsInCart, updatedShoppingCartInventory);
 //totalQuantity();
 //console.log(newQuantity);
