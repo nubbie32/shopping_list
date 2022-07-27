@@ -170,92 +170,10 @@ return false;
 }
 
 function test() {
-    let email = document.getElementById("email");
+    let email = document.getElementById("email").value;
     
     let email1 = localStorage.setItem("email", email);
 
     let email2 = localStorage.getItem("email", email);
 };
 
-//localStorage.setItem("email", "ValidateEmail");
-
-
-
-
-//let localStorageItemsInCart = localStorage.getItem("data", JSON.stringify(basket));
-// let shoppingCartCompletedPurchase = [];
-
-//let updatedShoppingCartInventory = [];
-
-
-
-
-//function testTest(itemsForSale, itemStoredInCart, updatedItemInventory){
-
-// convert to object from string
-//localStorageItemsInCartObj = JSON.parse(itemStoredInCart);
-//console.log(localStorageItemsInCartObj);
-
-
-//itemsForSale;
-//numItemsForSale = itemsForSale.length;
-//localStorageItemsInCart;
-//numLocalStorageItemsInCartObj = localStorageItemsInCartObj.length;
-//i = 0;
-
-//while(i <= numItemsForSale){
-  //  setNum = 0;
-    //currentId = itemsForSale[i].id;
-    //currentTotal = itemsForSale[i].total;
-   // console.log(itemsForSale[i]);
-   //console.log(currentId + " " + currentTotal);
-
- //   while(setNum < numLocalStorageItemsInCartObj){
-        //currentCartId = localStorageItemsInCartObj[setNum].id;
-        //currentCartItem = localStorageItemsInCartObj[setNum].item;
-        //console.log(localStorageItemsInCartObj[setNum]);
-       // console.log( " " + currentCartItem);
- //      console.log(localStorageItemsInCartObj);
-//        setNum++;
-//    };
-   
-    //i++;
-
-//};
-
-  //  itemsForSale.forEach(myFunction1);
-
-
-
-
-   // function myFunction1(item){
-
-    //    console.log(item.id + " " + item.total);
-
-
-      //  itemStoredInCart.forEach(myFunction2);
-
-      //  function myFunction2(item){
-       //     console.log(item);
-       // }
-        
-  //  }
-    
-
-
-
-
-
-    
-
-
-  //  updatedItemInventory
-    //return updatedItemInventory
-//};
-
-// name of the array containing all shopItemsData
-
-//JSON.parse(localStorageItemsInCart)
-//testTest(shopItemsData, localStorageItemsInCart, updatedShoppingCartInventory);
-//totalQuantity();
-//console.log(newQuantity);
