@@ -2,7 +2,7 @@
 
 
 
-Welcome to the Shopping list. This is actually a shopping cart design compared to a shopping list. This does not match my wireframe due to most of the functions i stated in my wireframe exceeded my understanding of how to write and use javaScript. Mentor Dawson said that my current project design was close enough to the original wireframe and he helped me design the current project. 
+Welcome to the Shopping list. This is actually a shopping cart design compared to a shopping list. This does not match my wireframe due to most of the functions i stated in my wireframe exceeded my understanding of how to write and use javaScript. Mentor Dawson said that my current project design was close enough to the original wireframe and he helped me design the current project. The top left corner title of the page is a link to ths shopping store page. Click on the add and subtract buttons to add the amount of items to the cart you with to purchase. CLick the shopping cart button on the top right to go and see the items you have selected. 
 
 Instructions: 
 
